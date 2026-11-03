@@ -1,0 +1,23 @@
+// Control-flow and rendering-contract checks, without a browser or external dependency.
+const vm=require('node:vm'),fs=require('node:fs'),assert=require('node:assert/strict');
+const html=fs.readFileSync('web/cube-journey.html','utf8');
+const bundle=fs.readFileSync('demo/cube-journey-recorded.html','utf8');const dataWindow={};const dataCtx={window:dataWindow};for(const m of [...bundle.matchAll(/<script>([\s\S]*?)<\/script>/g)].filter(m=>m[1].startsWith('window.JOURNEY_')))vm.runInNewContext(m[1],dataCtx);const calls=[];let failRequest=false;
+const scripts=[...html.matchAll(/<script>([\s\S]*?)<\/script>/g)].map(m=>m[1]);
+const context2d=new Proxy({createRadialGradient:()=>({addColorStop(){}})}, {get:(o,k)=>o[k]??(()=>{})});
+function element(id){return {id,value:({strength:'0.7',start:'20',time:'0'})[id]||'',tagName:'DIV',dataset:{},style:{},textContent:'',disabled:false,files:[],events:{},classList:{toggle(){},add(){},remove(){}},addEventListener(n,fn){this.events[n]=fn},getBoundingClientRect(){return {width:id==='graph'?700:1000,height:id==='graph'?48:800,left:0,top:0}},getContext(){return context2d},setAttribute(){},setPointerCapture(){},append(){},focus(){},scrollIntoView(){},showModal(){this.open=true},close(){this.open=false}}}
+const els=Object.fromEntries([...html.matchAll(/id="([\w-]+)"/g)].map(m=>[m[1],element(m[1])]));
+const groups={};for(const attr of ['region','move','prompt'])groups['[data-'+attr+']']=[...html.matchAll(new RegExp('data-'+attr+'="([^"]+)"','g'))].map(m=>Object.assign(element(m[1]),{dataset:{[attr]:m[1]}}));
+const winEvents={},docEvents={},sandbox={console,Set,Math,JSON,Array,Object,Number,String,Promise,AbortController,devicePixelRatio:1,setTimeout,clearTimeout,requestAnimationFrame(){},ResizeObserver:class{observe(){}},FileReader:class{},fetch:async(path,options={})=>{if(failRequest)throw Error('Injected transport failure');const body=options.body?JSON.parse(options.body):null;calls.push({path,body});let out;if(path==='/api/status')out={meta_configured:true};else if(path==='/api/journey/agent')out={experiment:dataWindow.JOURNEY_SNAPSHOTS['0.7:20'],actions:[{type:'navigate',region:'plaque'},{type:'movement',mode:'walk'},{type:'view',control:'compare',enabled:true},{type:'time',step:40,playing:false}],answer:'Server test response',model:'test-only',receipts:[{tool:'navigate',status:'success'}]};else if(path==='/api/journey/predict')out=dataWindow.JOURNEY_LEARNING[dataWindow.JOURNEY_SNAPSHOTS['0.7:20'].run_id];else if(path==='/api/journey/plan')out=dataWindow.JOURNEY_PLAN;else if(path==='/api/journey/challenge')out=dataWindow.JOURNEY_CHALLENGE;else out=dataWindow.JOURNEY_SNAPSHOTS[(body.strength??.7)+':'+(body.start??20)];return{ok:true,json:async()=>out}},document:{getElementById:id=>{assert.ok(els[id],id);return els[id]},querySelectorAll:s=>groups[s]||[],createElement:()=>element('option'),addEventListener:(n,f)=>docEvents[n]=f,hidden:false},addEventListener:(n,f)=>{const old=winEvents[n];winEvents[n]=old?(e=>{old(e);f(e)}):f}};sandbox.window=sandbox;
+vm.createContext(sandbox);for(const script of scripts)vm.runInContext(script,sandbox);
+const run=s=>vm.runInContext(s,sandbox);
+(async()=>{
+await new Promise(resolve=>setTimeout(resolve,10));
+assert.equal(run('recorded'),false);assert.equal(run('metaReady'),true);assert.equal(els.ask.disabled,false);
+els.question.value='Go to plaque and walk';await els.ask.onclick();assert.equal(run('region'),'plaque');assert.equal(run('movement'),'walk');assert.equal(els.answer.textContent,'Server test response');assert.equal(run('split'),true);assert.equal(run('step'),40);
+const first=calls.find(x=>x.path==='/api/journey/agent');assert.ok(first.body.session_id.length>=16);assert.equal(first.body.context.parameters.diameter_nm,168.2);assert.ok(!Object.hasOwn(first.body.context,'blood'));
+await els.ask.onclick();const sessions=calls.filter(x=>x.path==='/api/journey/agent').map(x=>x.body.session_id);assert.equal(sessions[0],sessions[1]);
+assert.ok(run('notes.length')>=2);await els.challenge.onclick();assert.ok(calls.some(x=>x.path==='/api/journey/challenge'));
+await els['learning-predict'].onclick();assert.match(els['learning-run'].textContent,/synthetic in-domain/);assert.ok(run('learningReceipt'));await els['learning-next'].onclick();assert.ok(calls.some(x=>x.path==='/api/journey/plan'));
+failRequest=true;await els.ask.onclick();assert.equal(run('busy'),false);assert.equal(els.ask.disabled,false);assert.match(els.status.textContent,/Injected transport failure/);
+console.log('PASS: live UI uses recomputed API context, session continuity, tool actions, sensitivity dispatch, notebook records and failure recovery. Model service stubbed.');
+})().catch(e=>{console.error(e);process.exitCode=1});

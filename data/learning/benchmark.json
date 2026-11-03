@@ -1,0 +1,942 @@
+{
+  "version": "crossing-learning-1.1",
+  "provenance": "Synthetic journeys from journey-2.0. Zero measured training cases.",
+  "split_counts": {
+    "train": 512,
+    "validation": 96,
+    "calibration": 96,
+    "test": 128,
+    "ood": 96
+  },
+  "teacher_parity_max_error": 5.551115123125783e-16,
+  "selected": "mlp",
+  "acceptance_passed": true,
+  "acceptance_scope": "Synthetic in-domain accuracy gate only; always compare with full solver. OOD abstention is mandatory.",
+  "validation_mae": {
+    "mlp": 0.005661459335025811,
+    "mps": 0.023236630812122034,
+    "ridge": 0.022164283444754657
+  },
+  "training": {
+    "mlp_11": {
+      "seconds": 0.578830504004145,
+      "parameters": 992,
+      "validation_mae": 0.006797594673546919,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.028133326512679423
+        ],
+        [
+          400,
+          0.016416680861656447
+        ],
+        [
+          600,
+          0.012710043904235356
+        ],
+        [
+          800,
+          0.010641448218815013
+        ],
+        [
+          1000,
+          0.009378965355842456
+        ],
+        [
+          1200,
+          0.008506307847657912
+        ],
+        [
+          1400,
+          0.008006620211851478
+        ],
+        [
+          1600,
+          0.00709063464257625
+        ],
+        [
+          1800,
+          0.006797594673546919
+        ]
+      ]
+    },
+    "mlp_29": {
+      "seconds": 0.5722223859993392,
+      "parameters": 992,
+      "validation_mae": 0.005894956200589868,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.027397030300461322
+        ],
+        [
+          400,
+          0.015244909397789353
+        ],
+        [
+          600,
+          0.011569233362586424
+        ],
+        [
+          800,
+          0.009515182995674951
+        ],
+        [
+          1000,
+          0.008400190298315888
+        ],
+        [
+          1200,
+          0.007648494580111923
+        ],
+        [
+          1400,
+          0.007016089327878759
+        ],
+        [
+          1600,
+          0.00648470054580006
+        ],
+        [
+          1800,
+          0.005894956200589868
+        ]
+      ]
+    },
+    "mlp_47": {
+      "seconds": 0.5807030709984247,
+      "parameters": 992,
+      "validation_mae": 0.006020053481120395,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.024378624959973557
+        ],
+        [
+          400,
+          0.015036780438090466
+        ],
+        [
+          600,
+          0.012007165766306345
+        ],
+        [
+          800,
+          0.010181911243269467
+        ],
+        [
+          1000,
+          0.008743242693341107
+        ],
+        [
+          1200,
+          0.007902389018740654
+        ],
+        [
+          1400,
+          0.007133299537262196
+        ],
+        [
+          1600,
+          0.006548480902520098
+        ],
+        [
+          1800,
+          0.006020053481120395
+        ]
+      ]
+    },
+    "mps_11": {
+      "seconds": 6.291320321004605,
+      "parameters": 980,
+      "validation_mae": 0.02356507567407642,
+      "selected_step": 1200,
+      "trace": [
+        [
+          200,
+          0.030829115530555673
+        ],
+        [
+          400,
+          0.028339698321206985
+        ],
+        [
+          600,
+          0.02577980467837017
+        ],
+        [
+          800,
+          0.025110950157244332
+        ],
+        [
+          1000,
+          0.024556418938026823
+        ],
+        [
+          1200,
+          0.02356507567407642
+        ],
+        [
+          1400,
+          0.024208546837665573
+        ],
+        [
+          1600,
+          0.02507054377830588
+        ],
+        [
+          1800,
+          0.02384934324971497
+        ]
+      ]
+    },
+    "mps_29": {
+      "seconds": 6.105115555001248,
+      "parameters": 980,
+      "validation_mae": 0.0238290122550875,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.030478674831230807
+        ],
+        [
+          400,
+          0.027381805301149243
+        ],
+        [
+          600,
+          0.025188796056447204
+        ],
+        [
+          800,
+          0.025365193797997027
+        ],
+        [
+          1000,
+          0.024994854913571982
+        ],
+        [
+          1200,
+          0.024065557257961428
+        ],
+        [
+          1400,
+          0.024497858098482882
+        ],
+        [
+          1600,
+          0.02433958995520843
+        ],
+        [
+          1800,
+          0.0238290122550875
+        ]
+      ]
+    },
+    "mps_47": {
+      "seconds": 6.121960656004376,
+      "parameters": 980,
+      "validation_mae": 0.023749954582527627,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.03154705362466336
+        ],
+        [
+          400,
+          0.028092765470402587
+        ],
+        [
+          600,
+          0.026244169308212485
+        ],
+        [
+          800,
+          0.025982224998541432
+        ],
+        [
+          1000,
+          0.025546004724106574
+        ],
+        [
+          1200,
+          0.02530683714919628
+        ],
+        [
+          1400,
+          0.024367025864089686
+        ],
+        [
+          1600,
+          0.024156328306970492
+        ],
+        [
+          1800,
+          0.023749954582527627
+        ]
+      ]
+    },
+    "mps_rank4": {
+      "seconds": 3.2882256360026076,
+      "parameters": 240,
+      "validation_mae": 0.028710340495771924,
+      "selected_step": 1600,
+      "trace": [
+        [
+          200,
+          0.04188960923371146
+        ],
+        [
+          400,
+          0.0371400875348852
+        ],
+        [
+          600,
+          0.033924960215783236
+        ],
+        [
+          800,
+          0.03258208611001622
+        ],
+        [
+          1000,
+          0.0304052394971233
+        ],
+        [
+          1200,
+          0.0290480594977386
+        ],
+        [
+          1400,
+          0.02910235303568263
+        ],
+        [
+          1600,
+          0.028710340495771924
+        ],
+        [
+          1800,
+          0.02931960147213174
+        ]
+      ]
+    },
+    "mps_reverse": {
+      "seconds": 5.83747433800454,
+      "parameters": 980,
+      "validation_mae": 0.024285244384254324,
+      "selected_step": 1800,
+      "trace": [
+        [
+          200,
+          0.03174926415617579
+        ],
+        [
+          400,
+          0.029924570669191925
+        ],
+        [
+          600,
+          0.027738299451066
+        ],
+        [
+          800,
+          0.0266510175815038
+        ],
+        [
+          1000,
+          0.02587630471102323
+        ],
+        [
+          1200,
+          0.0253692416956086
+        ],
+        [
+          1400,
+          0.024882829817435514
+        ],
+        [
+          1600,
+          0.02630289398807474
+        ],
+        [
+          1800,
+          0.024285244384254324
+        ]
+      ]
+    },
+    "mps_softmax": {
+      "seconds": 6.096320148004452,
+      "parameters": 980,
+      "validation_mae": 0.0253797018649648,
+      "selected_step": 1600,
+      "trace": [
+        [
+          200,
+          0.0297435390563932
+        ],
+        [
+          400,
+          0.027430537904943462
+        ],
+        [
+          600,
+          0.026594502267442467
+        ],
+        [
+          800,
+          0.02598258743051927
+        ],
+        [
+          1000,
+          0.025946762117507776
+        ],
+        [
+          1200,
+          0.025394445444810412
+        ],
+        [
+          1400,
+          0.025415120386944642
+        ],
+        [
+          1600,
+          0.0253797018649648
+        ],
+        [
+          1800,
+          0.025477347010906027
+        ]
+      ]
+    }
+  },
+  "calibration_radius": 0.07548675805476734,
+  "results": {
+    "test": {
+      "mlp_11": {
+        "mae": 0.006838466940944435,
+        "per_output_mae": {
+          "oral": 0.007885833790858379,
+          "tissue": 0.007935439243367017,
+          "blood": 0.008382892737102276,
+          "plaque": 0.005641737037157975,
+          "uptake": 0.0036180158553714035,
+          "cleared": 0.0069298489461261615,
+          "integrity": 0.006512303265345444,
+          "inflammation": 0.0078016646522268305
+        },
+        "p95_trajectory_max_error": 0.08194570174116798,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 3.535192219958322,
+        "final_plaque_mae": 0.009480763923051881,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.01801496558066539,
+        "raw_cumulative_monotonicity_violation_fraction": 0.8984375
+      },
+      "mlp_29": {
+        "mae": 0.0057800151318293524,
+        "per_output_mae": {
+          "oral": 0.007924046850027656,
+          "tissue": 0.005833725075643539,
+          "blood": 0.007933698548444822,
+          "plaque": 0.004226347286642945,
+          "uptake": 0.0020966327762706417,
+          "cleared": 0.00559347133919441,
+          "integrity": 0.006679986646242783,
+          "inflammation": 0.005952212532167929
+        },
+        "p95_trajectory_max_error": 0.07881640496946128,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 4.562042679194672,
+        "final_plaque_mae": 0.00641542379154678,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.011855631634323752,
+        "raw_cumulative_monotonicity_violation_fraction": 0.7890625
+      },
+      "mlp_47": {
+        "mae": 0.005988907961013071,
+        "per_output_mae": {
+          "oral": 0.006546979586476068,
+          "tissue": 0.0077951642356316455,
+          "blood": 0.0084868193504337,
+          "plaque": 0.00376548154907376,
+          "uptake": 0.0022778758968469985,
+          "cleared": 0.005357756921960272,
+          "integrity": 0.006375963247208302,
+          "inflammation": 0.007305222900473826
+        },
+        "p95_trajectory_max_error": 0.08537127605944098,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 4.731338095173022,
+        "final_plaque_mae": 0.0053679635233859595,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.012422597149911167,
+        "raw_cumulative_monotonicity_violation_fraction": 0.890625
+      },
+      "mps_11": {
+        "mae": 0.023176799514165118,
+        "per_output_mae": {
+          "oral": 0.024905372804176068,
+          "tissue": 0.021596511732862058,
+          "blood": 0.030483214570115012,
+          "plaque": 0.008769973119845939,
+          "uptake": 0.004175157206493109,
+          "cleared": 0.02030707742702776,
+          "integrity": 0.028348936626130174,
+          "inflammation": 0.046828152626670796
+        },
+        "p95_trajectory_max_error": 0.18276657119638678,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 13.21446464328724,
+        "final_plaque_mae": 0.015923342983929705,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.06282883490707317,
+        "raw_cumulative_monotonicity_violation_fraction": 0.96875
+      },
+      "mps_29": {
+        "mae": 0.02289447387609838,
+        "per_output_mae": {
+          "oral": 0.024611207619329625,
+          "tissue": 0.02379215630008886,
+          "blood": 0.030227929532991554,
+          "plaque": 0.009564610216403003,
+          "uptake": 0.002767568626790183,
+          "cleared": 0.020289945932033315,
+          "integrity": 0.02769973375658709,
+          "inflammation": 0.04420263902456334
+        },
+        "p95_trajectory_max_error": 0.18307398339858275,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 15.73824869866587,
+        "final_plaque_mae": 0.01602830278352703,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.0854813683157699,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9140625
+      },
+      "mps_47": {
+        "mae": 0.02295742983647895,
+        "per_output_mae": {
+          "oral": 0.024420184264859535,
+          "tissue": 0.023196280967438976,
+          "blood": 0.029914150274025997,
+          "plaque": 0.008611704772525649,
+          "uptake": 0.003147224415292196,
+          "cleared": 0.019562273609982535,
+          "integrity": 0.028573466701560184,
+          "inflammation": 0.04623415368614664
+        },
+        "p95_trajectory_max_error": 0.18805304641995882,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 15.916878436744868,
+        "final_plaque_mae": 0.015148859879639796,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.06670981730668768,
+        "raw_cumulative_monotonicity_violation_fraction": 1.0
+      },
+      "mps_rank4": {
+        "mae": 0.027904415010331415,
+        "per_output_mae": {
+          "oral": 0.02837787184962676,
+          "tissue": 0.02809237770539084,
+          "blood": 0.03438142374765434,
+          "plaque": 0.012329739718682646,
+          "uptake": 0.005932482938519393,
+          "cleared": 0.02701051394644238,
+          "integrity": 0.036967781507451565,
+          "inflammation": 0.05014312866888312
+        },
+        "p95_trajectory_max_error": 0.18984759923087158,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 25.803073627819153,
+        "final_plaque_mae": 0.02001560243657074,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.08178018297873534,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9140625
+      },
+      "mps_reverse": {
+        "mae": 0.02337006004655551,
+        "per_output_mae": {
+          "oral": 0.023555522810413558,
+          "tissue": 0.024634421213916288,
+          "blood": 0.03148633541539326,
+          "plaque": 0.009850738494763782,
+          "uptake": 0.0025871626905524295,
+          "cleared": 0.01999452999804418,
+          "integrity": 0.02882748900015597,
+          "inflammation": 0.04602428074920456
+        },
+        "p95_trajectory_max_error": 0.19185441501629497,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 17.269223940735106,
+        "final_plaque_mae": 0.015475383055019946,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.07338196567458397,
+        "raw_cumulative_monotonicity_violation_fraction": 1.0
+      },
+      "mps_softmax": {
+        "mae": 0.024919832532520874,
+        "per_output_mae": {
+          "oral": 0.03405217067658897,
+          "tissue": 0.022705218709570218,
+          "blood": 0.0271708071963078,
+          "plaque": 0.01321842735066518,
+          "uptake": 0.005415364453435147,
+          "cleared": 0.022356116303281916,
+          "integrity": 0.028543434743803525,
+          "inflammation": 0.04589712082651387
+        },
+        "p95_trajectory_max_error": 0.18870315035072838,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 11.798826238119153,
+        "final_plaque_mae": 0.022286108777630632,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.06694080835067318,
+        "raw_cumulative_monotonicity_violation_fraction": 0.8671875
+      },
+      "mlp_ensemble": {
+        "mae": 0.005602595725303635,
+        "per_output_mae": {
+          "oral": 0.0066547489934697685,
+          "tissue": 0.006823774454016469,
+          "blood": 0.007544225559366055,
+          "plaque": 0.004120295013437669,
+          "uptake": 0.0024543906339692346,
+          "cleared": 0.005203755744419424,
+          "integrity": 0.0059281324954777205,
+          "inflammation": 0.006091442908272825
+        },
+        "p95_trajectory_max_error": 0.08173828020681356,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 3.4870913265383,
+        "final_plaque_mae": 0.006092157692963872,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.013621025664658976,
+        "raw_cumulative_monotonicity_violation_fraction": 0.875
+      },
+      "mps_ensemble": {
+        "mae": 0.02265211893799244,
+        "per_output_mae": {
+          "oral": 0.024156348320296474,
+          "tissue": 0.02258038674872164,
+          "blood": 0.03008238167753545,
+          "plaque": 0.008736905374131049,
+          "uptake": 0.0024545084003942297,
+          "cleared": 0.019858052780202706,
+          "integrity": 0.027881022329054775,
+          "inflammation": 0.04546734587360298
+        },
+        "p95_trajectory_max_error": 0.18358543506169425,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 14.712371791685067,
+        "final_plaque_mae": 0.015304397347702045,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.07137085549494447,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9921875
+      },
+      "ridge": {
+        "mae": 0.022353446059980374,
+        "per_output_mae": {
+          "oral": 0.02680118590841255,
+          "tissue": 0.03345862024463189,
+          "blood": 0.03969879429960743,
+          "plaque": 0.0076213046763536985,
+          "uptake": 0.0027186516735021675,
+          "cleared": 0.021206959847513848,
+          "integrity": 0.011103323831342358,
+          "inflammation": 0.03621872799847915
+        },
+        "p95_trajectory_max_error": 0.20453684568946853,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 6.357738751929199,
+        "final_plaque_mae": 0.00794044379444896,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.02648663939135601,
+        "raw_cumulative_monotonicity_violation_fraction": 0.8671875
+      },
+      "selected_90pct_envelope_coverage": 0.9375
+    },
+    "ood": {
+      "mlp_11": {
+        "mae": 0.026506274738983232,
+        "per_output_mae": {
+          "oral": 0.014824270786469718,
+          "tissue": 0.05454183695322038,
+          "blood": 0.03688434800153311,
+          "plaque": 0.01545594938806327,
+          "uptake": 0.011761631495652463,
+          "cleared": 0.030254216440275903,
+          "integrity": 0.01118150632457226,
+          "inflammation": 0.0371464385220787
+        },
+        "p95_trajectory_max_error": 0.3664833518947061,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 37.15647808507668,
+        "final_plaque_mae": 0.028248687085257657,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.02209386682879763,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9166666666666666
+      },
+      "mlp_29": {
+        "mae": 0.02435823396398033,
+        "per_output_mae": {
+          "oral": 0.016491976895936563,
+          "tissue": 0.048778577198720245,
+          "blood": 0.03340718171910209,
+          "plaque": 0.014170656990133207,
+          "uptake": 0.008007397614105008,
+          "cleared": 0.026460052204618032,
+          "integrity": 0.01291302261680151,
+          "inflammation": 0.03463700647242607
+        },
+        "p95_trajectory_max_error": 0.33096195089623864,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 32.57268519628644,
+        "final_plaque_mae": 0.025697216806943035,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.01594778763609364,
+        "raw_cumulative_monotonicity_violation_fraction": 0.7916666666666666
+      },
+      "mlp_47": {
+        "mae": 0.02641899542909112,
+        "per_output_mae": {
+          "oral": 0.015067005549928276,
+          "tissue": 0.05489949891977545,
+          "blood": 0.03995014907623048,
+          "plaque": 0.013474222248592287,
+          "uptake": 0.011135547399021853,
+          "cleared": 0.028663117466559737,
+          "integrity": 0.012980313741598,
+          "inflammation": 0.03518210903102298
+        },
+        "p95_trajectory_max_error": 0.3627294215356984,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 41.38916434895984,
+        "final_plaque_mae": 0.02690482935429019,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.015010882534692668,
+        "raw_cumulative_monotonicity_violation_fraction": 0.875
+      },
+      "mps_11": {
+        "mae": 0.04595537229852612,
+        "per_output_mae": {
+          "oral": 0.02857820812774939,
+          "tissue": 0.06328706055988569,
+          "blood": 0.038329211692166264,
+          "plaque": 0.015740129015889566,
+          "uptake": 0.018964973550438115,
+          "cleared": 0.04465760467929383,
+          "integrity": 0.05534406834580952,
+          "inflammation": 0.10274172241697625
+        },
+        "p95_trajectory_max_error": 0.3794062283702414,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 23.06046943968457,
+        "final_plaque_mae": 0.02123979139754421,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.13010317587262085,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9479166666666666
+      },
+      "mps_29": {
+        "mae": 0.04663620176256853,
+        "per_output_mae": {
+          "oral": 0.03377542247400008,
+          "tissue": 0.05691617610496235,
+          "blood": 0.04263096803973107,
+          "plaque": 0.016958599838815553,
+          "uptake": 0.013655459871440567,
+          "cleared": 0.04901501345458406,
+          "integrity": 0.050907634825290614,
+          "inflammation": 0.10923033949172443
+        },
+        "p95_trajectory_max_error": 0.3695699594651598,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 31.436056902600594,
+        "final_plaque_mae": 0.020285436609024942,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.13992651105414747,
+        "raw_cumulative_monotonicity_violation_fraction": 0.90625
+      },
+      "mps_47": {
+        "mae": 0.044685899733322744,
+        "per_output_mae": {
+          "oral": 0.03237011877009061,
+          "tissue": 0.05056433641438013,
+          "blood": 0.04114900690239672,
+          "plaque": 0.014011662495042076,
+          "uptake": 0.008795722287517386,
+          "cleared": 0.043352212368601185,
+          "integrity": 0.05514842618507702,
+          "inflammation": 0.11209571244347673
+        },
+        "p95_trajectory_max_error": 0.36265330885826463,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 34.60362719218139,
+        "final_plaque_mae": 0.020863904778157544,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.13267669636978716,
+        "raw_cumulative_monotonicity_violation_fraction": 1.0
+      },
+      "mps_rank4": {
+        "mae": 0.05592210148174107,
+        "per_output_mae": {
+          "oral": 0.028153166306265447,
+          "tissue": 0.08163536258694475,
+          "blood": 0.05360256533195134,
+          "plaque": 0.027530645589330185,
+          "uptake": 0.01982608669805125,
+          "cleared": 0.06936590969477212,
+          "integrity": 0.06433781207328859,
+          "inflammation": 0.10292526357332533
+        },
+        "p95_trajectory_max_error": 0.40645825189546636,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 42.353324499009766,
+        "final_plaque_mae": 0.026914428213295063,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.076553489983627,
+        "raw_cumulative_monotonicity_violation_fraction": 0.8229166666666666
+      },
+      "mps_reverse": {
+        "mae": 0.04637813079139417,
+        "per_output_mae": {
+          "oral": 0.028662737866280107,
+          "tissue": 0.05723305539948826,
+          "blood": 0.0463518995007042,
+          "plaque": 0.018155137157581772,
+          "uptake": 0.007574446963596152,
+          "cleared": 0.0500334768600381,
+          "integrity": 0.05362240494611903,
+          "inflammation": 0.10939188763734514
+        },
+        "p95_trajectory_max_error": 0.37972756474899816,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 33.11239518506694,
+        "final_plaque_mae": 0.02486509152372046,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.14256864451000156,
+        "raw_cumulative_monotonicity_violation_fraction": 1.0
+      },
+      "mps_softmax": {
+        "mae": 0.05451958190502218,
+        "per_output_mae": {
+          "oral": 0.029313715734793425,
+          "tissue": 0.0865535044009339,
+          "blood": 0.057427668688703574,
+          "plaque": 0.027897867854628455,
+          "uptake": 0.012719327851945956,
+          "cleared": 0.05960800827236546,
+          "integrity": 0.0543883493568052,
+          "inflammation": 0.10824821308000192
+        },
+        "p95_trajectory_max_error": 0.45948279954025295,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 51.1463478081025,
+        "final_plaque_mae": 0.03658616277179625,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.060824820744394326,
+        "raw_cumulative_monotonicity_violation_fraction": 0.7604166666666666
+      },
+      "mlp_ensemble": {
+        "mae": 0.025264182475648298,
+        "per_output_mae": {
+          "oral": 0.014302081440676287,
+          "tissue": 0.05209414020398571,
+          "blood": 0.036210610770714316,
+          "plaque": 0.013977918387080514,
+          "uptake": 0.010198368732650252,
+          "cleared": 0.028222480750280065,
+          "integrity": 0.011786496211798099,
+          "inflammation": 0.03532136330800121
+        },
+        "p95_trajectory_max_error": 0.3550928332054524,
+        "mass_error": 3.3306690738754696e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 36.61198838629722,
+        "final_plaque_mae": 0.026353300451359103,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.017642213026838105,
+        "raw_cumulative_monotonicity_violation_fraction": 0.8541666666666666
+      },
+      "mps_ensemble": {
+        "mae": 0.04493462382133797,
+        "per_output_mae": {
+          "oral": 0.030239470703292595,
+          "tissue": 0.05601599245049833,
+          "blood": 0.0397763323929138,
+          "plaque": 0.015283380007886429,
+          "uptake": 0.011246738993699448,
+          "cleared": 0.04535923263074265,
+          "integrity": 0.05370183594236374,
+          "inflammation": 0.1078540074493069
+        },
+        "p95_trajectory_max_error": 0.3678445773657029,
+        "mass_error": 2.220446049250313e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 29.32103747099752,
+        "final_plaque_mae": 0.02051666887302302,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.13199325468581238,
+        "raw_cumulative_monotonicity_violation_fraction": 0.9479166666666666
+      },
+      "ridge": {
+        "mae": 0.04719840905355316,
+        "per_output_mae": {
+          "oral": 0.028456568607534333,
+          "tissue": 0.09988122465211398,
+          "blood": 0.07108549093641446,
+          "plaque": 0.020172198124152562,
+          "uptake": 0.016873646103534267,
+          "cleared": 0.04356331059221071,
+          "integrity": 0.02029266567252622,
+          "inflammation": 0.077262167739939
+        },
+        "p95_trajectory_max_error": 0.4670018408167341,
+        "mass_error": 4.440892098500626e-16,
+        "nonnegative": true,
+        "blood_auc_mae_fraction_seconds": 58.681527699600196,
+        "final_plaque_mae": 0.030323740416063668,
+        "cumulative_monotonicity_violation_fraction": 0.0,
+        "max_constraint_correction": 0.022337031664299206,
+        "raw_cumulative_monotonicity_violation_fraction": 0.5
+      },
+      "selected_90pct_envelope_coverage": 0.4791666666666667
+    }
+  },
+  "protocol_sha256": "b22bffa5d781601d90000b024ab39653bfcb32bd35236cfe3e1f0ee0feeb4e61",
+  "checkpoint_sha256": "3edbeb1653ded0fddd98fd3aaa676a925b911cefc3e20ecb0a001c6da67bef04",
+  "dataset_sha256": "d5079998671c316b804954fa5a000ba0b63fb725e40b44e5d7f523ee7e3dcf19",
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "platform": "Linux-6.18.57-x86_64-with-glibc2.39"
+  },
+  "total_seconds": 38.03876042900083,
+  "revision": "The first test exposed cumulative-fate reversals. Its results are retired diagnostics. Fixed conservative postprocessing is evaluated on fresh calibration/test/OOD draws; no weight retraining.",
+  "constraint": "Monotone cumulative uptake/clearance, bounded by available mass; proportional redistribution of remaining mass. Report raw violations and correction magnitude."
+}

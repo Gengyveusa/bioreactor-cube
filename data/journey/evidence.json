@@ -1,0 +1,656 @@
+{
+  "version": "crossing-evidence-2.0",
+  "review_date": "2026-10-30",
+  "coverage": "Selected evidence-graded pathways; not an exhaustive interactome. Each chain summarizes studies, not measured kinetics in this build.",
+  "sources": {
+    "15854028": {
+      "pmid": "15854028",
+      "title": "Hyaluronan synthase induction and hyaluronan accumulation in mouse epidermis following skin injury.",
+      "doi": "10.1111/j.0022-202X.2005.23697.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/15854028/",
+      "pmcid": null,
+      "year": "2005 May",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ]
+    },
+    "16557236": {
+      "pmid": "16557236",
+      "title": "Hyaluronan-CD44 interaction stimulates keratinocyte differentiation, lamellar body formation/secretion, and permeability barrier homeostasis.",
+      "doi": "10.1038/sj.jid.5700260",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/16557236/",
+      "pmcid": null,
+      "year": "2006 Jun",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "17158951": {
+      "pmid": "17158951",
+      "title": "Rhamm-/- fibroblasts are defective in CD44-mediated ERK1,2 motogenic signaling, leading to defective skin wound repair.",
+      "doi": "10.1083/jcb.200511027",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/17158951/",
+      "pmcid": "PMC2064710",
+      "year": "2006 Dec 18",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ]
+    },
+    "18597635": {
+      "pmid": "18597635",
+      "title": "Annexin-mediated matrix vesicle calcification in vascular smooth muscle cells.",
+      "doi": "10.1359/jbmr.080604",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/18597635/",
+      "pmcid": "PMC2685487",
+      "year": "2008 Nov",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "19781786": {
+      "pmid": "19781786",
+      "title": "Engagement of CD44 by hyaluronan suppresses TLR4 signaling and the septic response to LPS.",
+      "doi": "10.1016/j.molimm.2009.08.026",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19781786/",
+      "pmcid": "PMC2787860",
+      "year": "2009 Dec",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "23790635": {
+      "pmid": "23790635",
+      "title": "Selective matrix (hyaluronan) interaction with CD44 and RhoGTPase signaling promotes keratinocyte functions and overcomes age-related epidermal dysfunction.",
+      "doi": "10.1016/j.jdermsci.2013.05.003",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23790635/",
+      "pmcid": "PMC3775883",
+      "year": "2013 Oct",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, U.S. Gov't, Non-P.H.S."
+      ]
+    },
+    "24551108": {
+      "pmid": "24551108",
+      "title": "Specific sizes of hyaluronan oligosaccharides stimulate fibroblast migration and excisional wound repair.",
+      "doi": "10.1371/journal.pone.0088479",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/24551108/",
+      "pmcid": "PMC3923781",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ]
+    },
+    "25041621": {
+      "pmid": "25041621",
+      "title": "Hyaluronan enhances wound repair and increases collagen III in aged dermal wounds.",
+      "doi": "10.1111/wrr.12192",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25041621/",
+      "pmcid": "PMC4822517",
+      "year": "2014",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "25864644": {
+      "pmid": "25864644",
+      "title": "CD44 knock-down in bovine and human chondrocytes results in release of bound HYAL2.",
+      "doi": "10.1016/j.matbio.2015.04.002",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/25864644/",
+      "pmcid": "PMC4600047",
+      "year": "2015 Oct",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural"
+      ]
+    },
+    "27869206": {
+      "pmid": "27869206",
+      "title": "Endotoxin free hyaluronan and hyaluronan fragments do not stimulate TNF-α, interleukin-12 or upregulate co-stimulatory molecules in dendritic cells or macrophages.",
+      "doi": "10.1038/srep36928",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27869206/",
+      "pmcid": "PMC5116629",
+      "year": "2016 Nov 21",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, N.I.H., Extramural",
+        "Research Support, Non-U.S. Gov't"
+      ]
+    },
+    "31754044": {
+      "pmid": "31754044",
+      "title": "Citrullinome of Porphyromonas gingivalis Outer Membrane Vesicles: Confident Identification of Citrullinated Peptides.",
+      "doi": "10.1074/mcp.RA119.001700",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/31754044/",
+      "pmcid": "PMC6944236",
+      "year": "2020 Jan",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "35471989": {
+      "pmid": "35471989",
+      "title": "Sub-micrometer morphology of human atherosclerotic plaque revealed by synchrotron radiation-based μCT-A comparison with histology.",
+      "doi": "10.1371/journal.pone.0265598",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35471989/",
+      "pmcid": "PMC9041845",
+      "year": "2022",
+      "publication_types": [
+        "Journal Article",
+        "Research Support, Non-U.S. Gov't"
+      ]
+    },
+    "35580388": {
+      "pmid": "35580388",
+      "title": "Porphyromonas gingivalis outer membrane vesicles modulate cytokine and chemokine production by gingipain-dependent mechanisms in human macrophages.",
+      "doi": "10.1016/j.archoralbio.2022.105453",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/35580388/",
+      "pmcid": null,
+      "year": "2022 Aug",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "36289904": {
+      "pmid": "36289904",
+      "title": "Porphyromonas gingivalis Outer Membrane Vesicles Stimulate Gingival Epithelial Cells to Induce Pro-Inflammatory Cytokines via the MAPK and STING Pathways.",
+      "doi": "10.3390/biomedicines10102643",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/36289904/",
+      "pmcid": "PMC9599832",
+      "year": "2022 Oct 20",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "40131356": {
+      "pmid": "40131356",
+      "title": "Porphyromonas gingivalis outer membrane vesicles divert host innate immunity and promote inflammation via C4' monophosphorylated lipid A.",
+      "doi": "10.1093/jimmun/vkae050",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40131356/",
+      "pmcid": "PMC12123218",
+      "year": "2025 May 01",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "40836918": {
+      "pmid": "40836918",
+      "title": "CXCL4-Induced PBMCs Modulate Vascular Extracellular Matrix via Wnt5a-Dependent Matrix Metalloproteinase-7 and Calcifying Extracellular Vesicle Release.",
+      "doi": "10.1161/ATVBAHA.124.322067",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/40836918/",
+      "pmcid": null,
+      "year": "2025 Oct",
+      "publication_types": [
+        "Journal Article"
+      ]
+    },
+    "41750450": {
+      "pmid": "41750450",
+      "title": "Oxidative Stress Reshapes Porphyromonas gingivalis Outer Membrane Vesicles and Impairs OMV-Mediated Invasion and Persistence in Trophoblast Cells.",
+      "doi": "10.3390/antibiotics15020152",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41750450/",
+      "pmcid": "PMC12937337",
+      "year": "2026 Feb 02",
+      "publication_types": [
+        "Journal Article"
+      ]
+    }
+  },
+  "pathways": [
+    {
+      "id": "synthesis",
+      "title": "Upstream • synthesis",
+      "nodes": [
+        "Tissue injury",
+        "HAS2 / HAS3",
+        "HA accumulation"
+      ],
+      "sources": [
+        "15854028"
+      ],
+      "context": "Mouse epidermis after tape stripping; expression and HA accumulation. No fitted synthesis kinetics here.",
+      "status": "context",
+      "measure": "HA content and molecular-weight distribution"
+    },
+    {
+      "id": "turnover",
+      "title": "Upstream • turnover",
+      "nodes": [
+        "CD44–HYAL2 association",
+        "pH-dependent HA cleavage",
+        "HA fragment distribution"
+      ],
+      "sources": [
+        "25864644"
+      ],
+      "context": "Human and bovine chondrocytes. Weak activity at near-neutral pH under study conditions; oral turnover remains unknown.",
+      "status": "context",
+      "measure": "HYAL activity, pH, HA size distribution"
+    },
+    {
+      "id": "barrier",
+      "title": "HA • differentiation",
+      "nodes": [
+        "Large HA (700–1,000 kDa)",
+        "CD44",
+        "Rac1 / PKNγ",
+        "Differentiation",
+        "Barrier recovery"
+      ],
+      "sources": [
+        "23790635",
+        "16557236"
+      ],
+      "context": "Cultured human keratinocytes and mouse epidermis. Oral-barrier translation and numerical gain are assumptions.",
+      "status": "hypothesis coupling",
+      "measure": "Permeability, differentiation markers and lipid secretion"
+    },
+    {
+      "id": "calcium",
+      "title": "HA • junctional machinery",
+      "nodes": [
+        "HA–CD44",
+        "Rac1 / PKNγ",
+        "PLCγ1 / Ca²⁺",
+        "Cortactin–actin",
+        "Cell adhesion"
+      ],
+      "sources": [
+        "23790635"
+      ],
+      "context": "Mechanistic context discussed in the cited primary paper; this chain is not separately integrated as kinetic equations.",
+      "status": "context",
+      "measure": "Calcium dynamics, junctional localization, actin organization"
+    },
+    {
+      "id": "proliferation",
+      "title": "HA • proliferation",
+      "nodes": [
+        "Small HA (~27 kDa)",
+        "CD44",
+        "RhoA / ROCK",
+        "Keratinocyte proliferation"
+      ],
+      "sources": [
+        "23790635"
+      ],
+      "context": "Aged mouse skin: increased proliferation did not by itself restore permeability barrier repair.",
+      "status": "context",
+      "measure": "Proliferation and permeability measured separately"
+    },
+    {
+      "id": "motility",
+      "title": "HA • stromal migration",
+      "nodes": [
+        "HA / CD44 / RHAMM",
+        "ERK1/2 localization",
+        "Fibroblast migration",
+        "Granulation tissue"
+      ],
+      "sources": [
+        "17158951"
+      ],
+      "context": "Rhamm knockout fibroblasts and mouse skin wounds; cell-context-specific evidence.",
+      "status": "context",
+      "measure": "Scratch closure and ERK localization"
+    },
+    {
+      "id": "matrix",
+      "title": "HA • matrix effectors",
+      "nodes": [
+        "HA 250 kDa",
+        "CD44 / RHAMM transcripts",
+        "Collagen III increase",
+        "Wound repair"
+      ],
+      "sources": [
+        "25041621"
+      ],
+      "context": "Aged mouse dermal wounds. Associations with receptor transcripts do not establish every intervening causal edge.",
+      "status": "context",
+      "measure": "Collagen III content and wound closure"
+    },
+    {
+      "id": "resolution",
+      "title": "HA • immune modulation",
+      "nodes": [
+        "HA pretreatment",
+        "CD44 / TLR4",
+        "A20 (TNFAIP3)",
+        "Reduced LPS cytokine response"
+      ],
+      "sources": [
+        "19781786"
+      ],
+      "context": "Mouse macrophages and septic-response model; requires the tested sequence and context.",
+      "status": "context",
+      "measure": "A20, IL-6, TNF and pretreatment timing"
+    },
+    {
+      "id": "specificity",
+      "title": "HA • size is not a verdict",
+      "nodes": [
+        "6-mer HA",
+        "CD44 + RHAMM requirement",
+        "TGFβ1 / macrophage changes",
+        "Wound closure"
+      ],
+      "sources": [
+        "24551108"
+      ],
+      "context": "Rat wound model: 6-mer helped closure; 40 kDa inhibited closure. Do not generalize small=harmful or large=helpful.",
+      "status": "context",
+      "measure": "Size-specific controls, closure, myofibroblast markers"
+    },
+    {
+      "id": "contamination",
+      "title": "HA • challenge the premise",
+      "nodes": [
+        "HA preparation",
+        "Endotoxin control",
+        "Macrophage / DC response"
+      ],
+      "sources": [
+        "27869206"
+      ],
+      "context": "Endotoxin-free HA and fragments did not activate the tested inflammatory readouts. Contaminants can change the interpretation.",
+      "status": "counterevidence",
+      "measure": "Endotoxin assay, purified HA, matched vehicle"
+    },
+    {
+      "id": "omv_mapk",
+      "title": "OMV • epithelial effectors",
+      "nodes": [
+        "P. gingivalis OMV",
+        "ERK / JNK / p38 + NF-κB",
+        "IL-6 / IL-8"
+      ],
+      "sources": [
+        "36289904"
+      ],
+      "context": "OBA-9 human gingival epithelial cell line; pathway inhibition supports involvement. No cytokine concentration is predicted here.",
+      "status": "context",
+      "measure": "pERK, pJNK, pp38, IL-6 and IL-8"
+    },
+    {
+      "id": "omv_sting",
+      "title": "OMV • intracellular sensing",
+      "nodes": [
+        "OMV-associated nucleic acids",
+        "STING-dependent response",
+        "IL-6 / IL-8"
+      ],
+      "sources": [
+        "36289904"
+      ],
+      "context": "STING siRNA reduced OMV-induced readouts; the complete DNA-delivery sequence is not measured in this scene.",
+      "status": "context",
+      "measure": "STING perturbation, membrane/cargo colocalization"
+    },
+    {
+      "id": "omv_lps",
+      "title": "OMV • lipid A signaling",
+      "nodes": [
+        "OMV lipid A composition",
+        "TLR4 / TRIF",
+        "IFNβ; inflammasome / IL-1β"
+      ],
+      "sources": [
+        "40131356"
+      ],
+      "context": "P. gingivalis vesicles differ from parental outer membrane in tested lipid A composition; strain and conditions matter.",
+      "status": "context",
+      "measure": "Lipid A profiling, IFNβ, IL-1β"
+    },
+    {
+      "id": "protease",
+      "title": "OMV • protease effects",
+      "nodes": [
+        "OMV gingipains",
+        "Cytokine processing / signaling",
+        "Context-dependent cytokine levels"
+      ],
+      "sources": [
+        "35580388"
+      ],
+      "context": "Human U937-derived macrophages: inhibiting gingipains increased several cytokines but decreased TNF. No one-direction inflammation rule.",
+      "status": "counterevidence",
+      "measure": "Protease activity with specific inhibition and cytokine panel"
+    },
+    {
+      "id": "matrix_vesicle",
+      "title": "Plaque • host mineralization",
+      "nodes": [
+        "Host matrix vesicle",
+        "Annexins + ALP",
+        "Calcium / phosphate handling",
+        "Collagen-associated mineral"
+      ],
+      "sources": [
+        "18597635"
+      ],
+      "context": "Bovine VSMC-derived vesicles under calcifying conditions. Distinct origin and function from a bacterial OMV.",
+      "status": "context",
+      "measure": "Origin markers, ALP activity, annexins, mineral assay"
+    },
+    {
+      "id": "vascular",
+      "title": "Plaque • calcifying host EVs",
+      "nodes": [
+        "CXCL4-conditioned PBMCs",
+        "Wnt5a / CaMKII",
+        "MMP7 / ANXA5 / ALP EV cargo",
+        "Matrix calcification"
+      ],
+      "sources": [
+        "40836918"
+      ],
+      "context": "In vitro causal perturbations plus human carotid plaque associations. This is a host EV branch, not OMV conversion.",
+      "status": "context",
+      "measure": "Host EV markers, MMP7, ALP and calcium deposition"
+    }
+  ],
+  "vesicle": {
+    "id": "OMV-001",
+    "organism": "Porphyromonas gingivalis",
+    "reference_strain": "ATCC 33277",
+    "identity": "One synthetic, literature-informed exemplar. No claim that all displayed cargo was co-measured in one real particle.",
+    "properties": [
+      {
+        "name": "Diameter",
+        "value": "168.2 nm default; 50–300 nm adjustable",
+        "status": "reference-informed",
+        "source": "41750450",
+        "note": "Control-preparation NTA mean 168.2 ± 8.7 nm in this study. The exemplar diameter is a chosen value, not a measured single-particle diameter."
+      },
+      {
+        "name": "Membrane",
+        "value": "One lipid bilayer; 5 nm illustrative thickness",
+        "status": "assumed rendering",
+        "note": "Outer-membrane-derived bleb. Not a double-membrane bacterium."
+      },
+      {
+        "name": "Surface charge",
+        "value": "Negative in the reference preparation; magnitude unassigned",
+        "status": "reported direction",
+        "source": "41750450",
+        "note": "Depends on buffer and preparation; zeta potential is not a fixed material constant."
+      },
+      {
+        "name": "Medium",
+        "value": "310 K, viscosity 1 mPa·s, tissue mobility factor 0.25",
+        "status": "model assumption",
+        "note": "Stokes–Einstein estimate; not a measured tissue diffusion coefficient."
+      },
+      {
+        "name": "Cargo counts / mass / density",
+        "value": "Unmeasured; no molecular copy numbers assigned",
+        "status": "unknown",
+        "note": "Glyphs identify cargo classes, not their stoichiometry."
+      }
+    ],
+    "cargo": [
+      {
+        "name": "LPS / lipid A",
+        "where": "Outer leaflet",
+        "status": "reported in OMV preparations",
+        "source": "40131356"
+      },
+      {
+        "name": "Gingipains (Rgp / Kgp)",
+        "where": "OMV-associated proteins; icon position schematic",
+        "status": "reported activity",
+        "source": "35580388"
+      },
+      {
+        "name": "DNA / RNA",
+        "where": "Associated nucleic-acid cargo; lumen placement schematic",
+        "status": "preparation-level evidence; single-particle colocalization unknown",
+        "source": "36289904"
+      },
+      {
+        "name": "PPAD / citrullinated proteins",
+        "where": "Comparator evidence; not assigned to OMV-001",
+        "status": "W83-study comparison",
+        "source": "31754044"
+      }
+    ],
+    "comparison": {
+      "shared": "Small rounded lipid-bound morphology can look similar at low detail.",
+      "omv": "Bacterial outer-membrane origin; LPS and bacterial virulence cargo.",
+      "matrix": "Host-derived mineralization vesicle; annexins and alkaline phosphatase in the cited VSMC study.",
+      "conclusion": "Morphology alone cannot identify origin or prove calcifying function. No OMV-to-matrix-vesicle transformation is modeled."
+    }
+  },
+  "image": {
+    "file": "plaque-rupture-human-carotid-figure-2.jpg",
+    "credit": "Truong et al., PLOS ONE (2022), Figure 2, CC BY 4.0. Unchanged original image.",
+    "doi": "10.1371/journal.pone.0265598.g002",
+    "source": "35471989",
+    "license": "https://creativecommons.org/licenses/by/4.0/",
+    "specimen": "Human carotid endarterectomy; SRμCT A–C, glycophorin A histology D–F.",
+    "geometry": "Manual approximate outline of panel D, extruded to an assumed depth for navigation. No tomography volume has been imported.",
+    "scale": "Original panel D scale bar is 1 mm; approximate manual calibration 98 pixels/mm in the 1500×2219 source. Scene is a multiscale teaching composition.",
+    "sha256": "88353def27547ba6df0414ee0127275722701e229412c7d6bc1779dd5779ffe1"
+  },
+  "outline": {
+    "panel": "D",
+    "coordinates": "normalized to upper-right panel",
+    "method": "manually approximated from the displayed source; not expert segmentation",
+    "outer": [
+      [
+        0.26,
+        0.02
+      ],
+      [
+        0.51,
+        0.01
+      ],
+      [
+        0.72,
+        0.09
+      ],
+      [
+        0.87,
+        0.24
+      ],
+      [
+        0.96,
+        0.45
+      ],
+      [
+        0.95,
+        0.68
+      ],
+      [
+        0.83,
+        0.85
+      ],
+      [
+        0.62,
+        0.95
+      ],
+      [
+        0.37,
+        0.94
+      ],
+      [
+        0.19,
+        0.84
+      ],
+      [
+        0.08,
+        0.67
+      ],
+      [
+        0.04,
+        0.45
+      ],
+      [
+        0.09,
+        0.21
+      ]
+    ],
+    "lumen": [
+      [
+        0.39,
+        0.27
+      ],
+      [
+        0.59,
+        0.22
+      ],
+      [
+        0.76,
+        0.28
+      ],
+      [
+        0.85,
+        0.4
+      ],
+      [
+        0.85,
+        0.61
+      ],
+      [
+        0.76,
+        0.77
+      ],
+      [
+        0.59,
+        0.83
+      ],
+      [
+        0.39,
+        0.82
+      ],
+      [
+        0.29,
+        0.73
+      ],
+      [
+        0.33,
+        0.61
+      ],
+      [
+        0.48,
+        0.55
+      ],
+      [
+        0.37,
+        0.45
+      ],
+      [
+        0.29,
+        0.35
+      ]
+    ],
+    "extrusion_depth_scene_units": 90
+  }
+}
