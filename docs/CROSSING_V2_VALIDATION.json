@@ -1,0 +1,51 @@
+{
+  "version": "journey-2.0",
+  "run_id": "571c5c55c4c9a13f",
+  "checks": {
+    "mass_error": 3.219646771412954e-15,
+    "mass_conserved": true,
+    "nonnegative": true,
+    "identical_before_intervention": true
+  },
+  "metrics": {
+    "baseline": {
+      "blood_auc": 369.82510749107564,
+      "tissue_auc": 96.7200445002171,
+      "plaque_auc": 115.61879368674393,
+      "peak_blood": 0.4594918745908555,
+      "peak_seconds": 500.0,
+      "cumulative_blood_entry": 0.9565579778084419,
+      "cleared": 0.554665645118846,
+      "plaque_retained": 0.1987525735746712,
+      "tissue_uptake": 0.02902798162551358,
+      "final_inflammation": 0.14454806444716872
+    },
+    "intervention": {
+      "blood_auc": 352.3616449333435,
+      "tissue_auc": 93.19334482530815,
+      "plaque_auc": 110.73259837995602,
+      "peak_blood": 0.43421959398613136,
+      "peak_seconds": 470.0,
+      "cumulative_blood_entry": 0.9195518042538957,
+      "cleared": 0.5284703730482124,
+      "plaque_retained": 0.18925123058247004,
+      "tissue_uptake": 0.027970151131522594,
+      "final_inflammation": 0.15372585269248998
+    }
+  },
+  "validation": {
+    "python_tests": 21,
+    "result": "passed",
+    "portable_ui": "passed (DOM/canvas test double)",
+    "live_ui": "passed (API stub), including view and timeline actions",
+    "new_live_meta_provider": "not tested",
+    "voice_capture": "not tested",
+    "real_browser_visual_review": "not performed for v2"
+  },
+  "limitations": [
+    "Biological parameters and HA coupling assumed",
+    "Narrated OMV arrival is conditioned, not a sampled trajectory",
+    "2D carotid outline extruded to an invented depth",
+    "16 selected pathway chains, not an exhaustive interactome"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+ "status":"Collection specification only; no measured data or automated ingestion/training implemented.",
+ "grouping":"Keep all frames, image crops, branches and repeated measurements from one specimen in one split; hold out independent batches/donors where available.",
+ "required_fields":["study_id","pseudonymous_specimen_group","batch_id","source_file","source_sha256","measured_or_simulated","measurement_time","time_unit","tissue_or_compartment","intervention_description","readout","value","unit","assay_method","control_type","measurement_uncertainty","normalization_method"],
+ "microscopy_fields":["modality","calibrated_pixel_size","scale_bar_provenance","preparation","labeling_method","annotation_protocol","annotator_agreement","independent_identity_evidence"],
+ "scope":"Do not label vesicle origin or cargo solely from morphology. Simulated data and illustrative images cannot serve as biological validation."
+}

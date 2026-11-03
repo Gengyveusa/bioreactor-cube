@@ -1,0 +1,50 @@
+{
+  "model": "schooling-local-rules-v1",
+  "runtime": "v24.22.1",
+  "scope": "Node CPU physics/update benchmark including summaries; excludes browser drawing and does not establish user-device FPS.",
+  "tests": [
+    "fixed-seed reproducibility",
+    "zero-energy immobility",
+    "zero-information coupling ablation",
+    "energy accounting",
+    "terrain mobility response",
+    "finite bounded state",
+    "count-preserving aggregation",
+    "bounded neighbor work",
+    "input guards"
+  ],
+  "results": [
+    {
+      "agents": 64,
+      "median_step_ms": 0.11514300000000333,
+      "p95_step_ms": 0.3534400000000062,
+      "candidate_checks": 220,
+      "bound": 6144,
+      "groups": 37
+    },
+    {
+      "agents": 256,
+      "median_step_ms": 0.5868499999999983,
+      "p95_step_ms": 1.2567639999999898,
+      "candidate_checks": 3512,
+      "bound": 24576,
+      "groups": 62
+    },
+    {
+      "agents": 1024,
+      "median_step_ms": 3.0592860000000144,
+      "p95_step_ms": 4.969929000000008,
+      "candidate_checks": 55600,
+      "bound": 98304,
+      "groups": 64
+    },
+    {
+      "agents": 4096,
+      "median_step_ms": 13.206854999999962,
+      "p95_step_ms": 14.82425900000004,
+      "candidate_checks": 393216,
+      "bound": 393216,
+      "groups": 64
+    }
+  ]
+}

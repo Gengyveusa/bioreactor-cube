@@ -1,0 +1,52 @@
+{
+  "version": "crossing-learning-1.1",
+  "provenance": "Synthetic journeys from journey-2.0. Zero measured training cases.",
+  "seed": 20261030,
+  "splits": {
+    "train": 512,
+    "validation": 96,
+    "calibration": 96,
+    "test": 128,
+    "ood": 96
+  },
+  "grouping": "Both branches and every sampled time from one parameter draw remain together; exact predictive configurations are unique.",
+  "training_steps": 1800,
+  "batch_size": 256,
+  "learning_rate": 0.003,
+  "validation_every": 200,
+  "seeds": [
+    11,
+    29,
+    47
+  ],
+  "primary_metric": "Mean absolute error over 8 outputs, both branches and 16 time points, with each trajectory equally weighted.",
+  "secondary_metrics": [
+    "blood AUC absolute error",
+    "final plaque error",
+    "ensemble disagreement",
+    "mass conservation",
+    "nonnegative fates",
+    "monotone cumulative fates"
+  ],
+  "acceptance": {
+    "mean_absolute_error_max": 0.03,
+    "p95_trajectory_max_error_max": 0.15,
+    "mass_error_max": 1e-10,
+    "cumulative_monotonicity_violation_fraction_max": 0
+  },
+  "calibration": "90% split-conformal simultaneous envelope over all 8 outputs, both branches and sampled times per case. Exchangeability applies only to this synthetic in-domain sampling distribution.",
+  "selection": "Choose family by original validation MAE after fixed postprocessing; freeze selection and calibration before opening fresh test.",
+  "ood": "Low velocity [0.1,0.3) or high velocity (1.8,2.0], outside train support. Also reject any runtime parameter outside the trained support box.",
+  "quantum_tests": [
+    "Born normalization",
+    "global phase invariance",
+    "bond-rank 4 versus 9",
+    "reversed feature order",
+    "softmax head ablation"
+  ],
+  "budget": "Each trained model gets the same minibatch size, optimizer steps and validation schedule; record parameter counts and wall time. No claim of equal FLOPs or quantum advantage.",
+  "scope": "Learn simulator behavior and prioritize discriminating measurements. No clinical efficacy, MW-dependent HA biology, or automatic empirical identity of vesicles.",
+  "revision": "The first test exposed cumulative-fate reversals. Its results are retired diagnostics. Fixed conservative postprocessing is evaluated on fresh calibration/test/OOD draws; no weight retraining.",
+  "prospective_seed": 20261031,
+  "constraint": "Monotone cumulative uptake/clearance, bounded by available mass; proportional redistribution of remaining mass. Report raw violations and correction magnitude."
+}

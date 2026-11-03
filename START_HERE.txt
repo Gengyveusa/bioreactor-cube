@@ -1,0 +1,31 @@
+FASOLATI CUBE — THE CROSSING v3 — LEARNING + SCALES
+
+1. Stop an older Cube server with Control-C in its Terminal window.
+2. Extract this ZIP to a NEW folder. Keep the full folder together.
+3. In Terminal, type: bash
+   add a space, drag start-mac.command from the NEW folder into Terminal,
+   then press Return.
+4. Enter your Meta API key at the hidden prompt.
+5. Open http://127.0.0.1:8765/journey
+6. Open Learning: Predict & verify, then Choose next measurement.
+7. Press Schooling fish. Set information, energy, terrain and time span.
+   Disrupt the school, aggregate groups, or export the resulting system state.
+8. Explore all seven scales. Judge story and the original journey remain available.
+
+Without a server: open demo/cube-journey-recorded.html in a browser.
+It contains 12 paired runs, recorded learned predictions, the default assay
+ranking, and a fully interactive schooling sandbox.
+Live Meta and advanced parameter changes require the local server.
+
+The scene follows one synthetic OMV to a pre-existing carotid plaque.
+Physics, evidence and assumptions are documented in docs/THE_CROSSING.md.
+This is a hypothesis demonstrator, not measured treatment efficacy.
+
+Other views: / is the research lab; /world is the numerical Cube.
+Keep the server Terminal open while using the live app.
+
+Training, quantum-inspired comparisons, scale boundaries and tests:
+docs/LEARNING_AND_SCALES.md
+
+These trained models predict synthetic simulations. They are not biological
+validation or patient-outcome predictors. No quantum advantage is claimed.

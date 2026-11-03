@@ -1,0 +1,38 @@
+# Default Layer-1 simulator config — v1 falsification-target run
+seed: 42
+ticks: 1500
+tick_minutes: 1.0
+log_every: 10
+output_dir: output
+
+grid:
+  kind: "1d"
+  depth_cells: 50
+  cell_size_um: 20.0
+
+chemistry:
+  D_O2: 1.0
+  D_pH: 0.6
+  D_sugar: 0.8
+  D_heme: 0.3
+  D_lactate: 0.7
+  D_NO: 1.2
+  D_H2S: 0.9
+  D_NH3: 0.8
+  saliva_O2: 8.0
+  saliva_pH: 6.8
+  saliva_buffer: 0.05
+  heme_baseline: 0.0
+  heme_bleed_rate: 0.0           # set 0.05+ to ignite OVN cascade
+  stephan_amplitude: 1.0
+  stephan_decay: 0.02
+  stephan_period: 240
+
+agents:
+  initial_inoculum_per_species: 8
+  max_agents: 5000
+  viability_grace_ticks: 80
+  division_threshold: 0.35   # threshold on EXCESS fitness, with stochastic divide rate
+  omv_base_rate: 0.001
+  omv_stress_multiplier: 5.0
+

@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.bak
+.DS_Store
+output*/
+calibration_output*/
+*.h5
+*.hdf5
+.venv*/
+.env
+.env.*
+

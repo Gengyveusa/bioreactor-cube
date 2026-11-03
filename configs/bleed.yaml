@@ -1,0 +1,21 @@
+# OVN cascade ignition — turn on the heme bleed loop
+seed: 42
+ticks: 2000
+log_every: 10
+output_dir: output_bleed
+
+grid:
+  kind: "1d"
+  depth_cells: 50
+
+chemistry:
+  heme_bleed_rate: 0.08          # ignite Pg
+  saliva_O2: 8.0
+  saliva_pH: 6.8
+
+agents:
+  initial_inoculum_per_species: 8
+  max_agents: 5000
+  viability_grace_ticks: 80
+  division_threshold: 0.35
+

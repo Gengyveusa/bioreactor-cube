@@ -1,0 +1,25 @@
+[project]
+name = "oral_biofilm_sim"
+version = "0.1.0"
+description = "Mechanistic Layer 1 simulator for the Oral Microbiome Node Schema"
+requires-python = ">=3.10"
+dependencies = [
+  "mesa>=2.3",
+  "numpy>=1.26",
+  "scipy>=1.11",
+  "networkx>=3.2",
+  "pyyaml>=6.0",
+  "h5py>=3.10",
+  "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["sim*"]
+

@@ -1,0 +1,18 @@
+{
+  "release": "The Crossing v3",
+  "learning_version": "crossing-learning-1.1",
+  "python_tests": {
+    "passed": 33,
+    "scope": "journey transport, ML, HTTP and bounded agent tool integration"
+  },
+  "node_tests": {
+    "portable_ui": "passed",
+    "live_ui_with_stubbed_provider": "passed",
+    "schooling_kernel": "passed"
+  },
+  "provider_live_v3": "not yet tested on the user Mac",
+  "visual_browser_v3": "not yet inspected",
+  "solver_version": "journey-2.0 unchanged",
+  "quantum_hardware": false,
+  "measured_training_cases": 0
+}

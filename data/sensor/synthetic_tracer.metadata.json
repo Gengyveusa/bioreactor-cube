@@ -1,0 +1,9 @@
+{
+  "channel_name": "Synthetic tracer signal",
+  "unit": "arbitrary units",
+  "sensor_id": "demo-generator",
+  "sample_id": "synthetic-example",
+  "calibration_status": "unknown",
+  "calibration_reference": "",
+  "source_kind": "synthetic_demo"
+}

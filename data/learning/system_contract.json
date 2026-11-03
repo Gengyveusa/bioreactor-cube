@@ -1,0 +1,21 @@
+{
+ "schema":"information-energy-terrain-time/v1",
+ "statement":"Information is the primary represented substrate in this project's modeling framework. Energy drives permissible change over terrain through elapsed time, producing a system state.",
+ "equation":"S(t + dt) = F_theta(S(t), I(t), E(t), T(t), dt; seed)",
+ "scope":"An explicit modeling contract, not a demonstrated universal physical law or a claim that biological and quantum scales share one dynamics model.",
+ "fields":{
+   "information":"What the system encodes and what an agent can sense or communicate; declare representation and locality.",
+   "energy":"What permits state change; declare units, supplied budget, consumption, dissipation and unresolved terms.",
+   "terrain":"Spatial and contextual constraints: geometry, barriers, gradients, media and boundary conditions.",
+   "time":"Declared integration step and observation horizon. Simulation units do not automatically map to physiological time.",
+   "system_state":"Observable outputs plus internal state, uncertainty, provenance, model version and random seed."
+ },
+ "implemented_adapters":{
+   "schooling":"Local positions/headings; finite normalized movement budget; periodic terrain with optional mobility band; bounded time horizon; exported positions, velocities, energy ledger and polarization.",
+   "crossing":"Specified vesicle/repair parameters; conservative tissue transport and compartments; assumed 10-second clock. No explicit metabolic energy budget: this term remains unresolved.",
+   "epoch4":"Existing information-primary tissue operators in sim/epoch4; not numerically coupled to the schooling or Crossing solvers.",
+   "tensor_network":"Conditional angle features and Born-normalized fate outputs; computational surrogate, not a quantum energy/terrain solver."
+ },
+ "coupling_contract":"Any future scale transfer must identify source and target state, units, mapping, conserved quantities, uncertainty, timing and supporting evidence. No implicit conversion from fish behavior to cell biology.",
+ "validation":["zero-energy immobility", "zero-information coupling ablation", "energy ledger", "bounded terrain response", "fixed-seed reproducibility", "time-span endpoint", "count-preserving aggregation", "neighbor-work bound"]
+}
